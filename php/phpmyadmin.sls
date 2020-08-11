@@ -1,6 +1,6 @@
-phpmyadmin-composer:
+phpmyadmin:
   require:
-    - composer
+    - sls: php.composer
 
   cmd.run:
     - name: composer create-project phpmyadmin/phpmyadmin
