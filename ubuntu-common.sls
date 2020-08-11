@@ -1,4 +1,4 @@
 include:
-  - includes/locale-ru-en
-  - includes/swapfile-4g
-  - includes/ubuntu-packages-common
+  - system-settings/locale-en-ru
+  - system-settings/swapfile-4g
+  - system-settings/ubuntu-packages-common
