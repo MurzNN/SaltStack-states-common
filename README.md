@@ -1,4 +1,3 @@
-==========
 SaltStack-states-common
 ==========
 
