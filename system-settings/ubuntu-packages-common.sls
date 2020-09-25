@@ -17,3 +17,4 @@ packages.ubuntu:
       - rsync
       - pv
       - ppa-purge
+      - dbus-user-session
