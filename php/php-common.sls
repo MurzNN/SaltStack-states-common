@@ -7,3 +7,7 @@ packages.php:
       - php-xml
       - php-zip
       - phpunit
+      - php-apcu
+
+include:
+  - php.composer

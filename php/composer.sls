@@ -1,14 +1,7 @@
 composer-download:
   cmd.run:
-    - name: curl -sS https://getcomposer.org/installer | php
+    - name: curl -sS https://getcomposer.org/installer | php -- --install-dir=/usr/local/bin/ --filename=composer
     - unless: test -f /usr/local/bin/composer
-    - cwd: /root/
+    - cwd: /tmp
     - env:
-      - HOME : /root
-
-composer:
-  cmd.wait:
-    - name: mv /root/composer.phar /usr/local/bin/composer
-    - cwd: /root/
-    - watch:
-      - cmd: composer-download
+      - COMPOSER_HOME : /tmp
