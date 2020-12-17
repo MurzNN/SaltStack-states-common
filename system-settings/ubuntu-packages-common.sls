@@ -18,3 +18,4 @@ packages.ubuntu:
       - pv
       - ppa-purge
       - dbus-user-session
+      - wakeonlan
