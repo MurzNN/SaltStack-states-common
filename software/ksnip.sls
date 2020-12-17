@@ -4,8 +4,8 @@ ksnip:
 
   file.managed:
     - name: /var/cache/packages-downloaded/ksnip.deb
-    - source: https://github.com/ksnip/ksnip/releases/download/v1.7.3/ksnip-1.7.3.deb
-    - source_hash: 6d349aebb0cd0823196b88377313b46a
+    - source: https://github.com/ksnip/ksnip/releases/download/v1.8.0/ksnip-1.8.0.deb
+    - source_hash: 23f0fe2f2be2b87aedfc86f70472422a
 
   pkg.installed:
     - sources:
