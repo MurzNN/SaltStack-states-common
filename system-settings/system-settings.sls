@@ -32,3 +32,8 @@ mc-default-internal-viewer:
   file.append:
     - name: /etc/mc/ini
     - text: use_internal_view=1
+
+tmux-mouse-mode:
+  file.append:
+    - name: /etc/tmux.conf
+    - text: set -g mouse on
