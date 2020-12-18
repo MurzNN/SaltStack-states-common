@@ -5,9 +5,11 @@ lvm-suppress-fd-warnings:
   #     - LVM_SUPPRESS_FD_WARNINGS=1
   file.append:
     - name: /etc/environment
-    - text:  |
-      # Disable "leaked" warnings
-      LVM_SUPPRESS_FD_WARNINGS=1
+    # - text:
+    #   - LVM_SUPPRESS_FD_WARNINGS=1
+    - text: |
+        # Disable "leaked" warnings
+        LVM_SUPPRESS_FD_WARNINGS=1
 
 firefox-use-kde-dialogs:
   # file.managed:
@@ -17,22 +19,16 @@ firefox-use-kde-dialogs:
   #     - GTK_USE_PORTAL=1
   file.append:
     - name: /etc/environment
-    - text:  |
+    - text: |
         # Support native KDE open/save dialogs in Firefox https://phabricator.kde.org/T10189
         GTK_USE_PORTAL=1
 
 mc-default-internal-editor:
-  file.line:
+  file.append:
     - name: /etc/mc/ini
-    - create: True
-    - mode: insert
-    - content: use_internal_edit=1
-    - location: end
+    - text: use_internal_edit=1
 
 mc-default-internal-viewer:
-  file.line:
+  file.append:
     - name: /etc/mc/ini
-    - create: True
-    - mode: insert
-    - content: use_internal_view=1
-    - location: end
+    - text: use_internal_view=1
