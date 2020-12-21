@@ -4,8 +4,8 @@ ferdi:
 
   file.managed:
     - name: /var/cache/packages-downloaded/ferdi.deb
-    - source: https://github.com/getferdi/ferdi/releases/download/5.6.0-beta.2/ferdi_5.6.0-beta.2_amd64.deb
-    - source_hash: 9ffb6e0723eef0af4aa4f07594609aab
+    - source: https://github.com/getferdi/ferdi/releases/download/v5.6.0-beta.5/ferdi_5.6.0-beta.5_amd64.deb
+    - source_hash: 96242ba8e76f95c21628da7508628afe
 
   pkg.installed:
     - sources:
