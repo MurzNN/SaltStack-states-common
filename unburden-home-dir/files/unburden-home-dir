@@ -1,0 +1,7 @@
+# Configuration for unburden-home-dir
+#
+# Parsed by Config::File
+
+TARGETDIR=/var/cache/unburden-home-dir
+FILELAYOUT='%u/%s'
+#DEBUG=

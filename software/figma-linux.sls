@@ -1,4 +1,4 @@
-plasma-applet-qalculate:
+figma-linux:
   pkgrepo.managed:
     - ppa: chrdevs/figma
   pkg.installed:
