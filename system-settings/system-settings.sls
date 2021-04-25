@@ -24,14 +24,13 @@ firefox-use-kde-dialogs:
         GTK_USE_PORTAL=1
 
 mc-default-internal-editor:
-  file.append:
-    - name: /etc/mc/ini
-    - text: use_internal_edit=1
-
-mc-default-internal-viewer:
-  file.append:
-    - name: /etc/mc/ini
-    - text: use_internal_view=1
+    ini.options_present:
+    - name: /etc/mc/mc.ini
+    - separator: '='
+    - sections:
+        'Midnight-Commander':
+          use_internal_edit: 1
+          use_internal_view: 1
 
 tmux-mouse-mode:
   file.append:
